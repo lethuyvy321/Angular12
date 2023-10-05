@@ -1,1 +1,20 @@
-<p>about works!</p>
+<p appHighLight style ="width:200px">about works!</p>
+<p [appHighLight] = "myColor" style ="width:200px">about works!</p>
+<p [appHighLight] = "'orange'" style ="width:200px">about works!</p>
+<ul [ngSwitch]="loginName">
+    <li *ngSwitchCase="'user'">
+        <p>User is logged in..</p>
+    </li>
+    <li *ngSwitchCase="'admin'">
+        <p>Admin is logged in.</p>
+        <!-- component directive -->
+        <app-home></app-home>
+    </li>
+    <li *ngSwitchDefault>
+        <p>Please choose login name</p>
+    </li>
+</ul>
+
+<span>Counter = {{counter}}</span>
+<br />
+<span>Counter^2 = {{counterBinhPhuong}}</span>

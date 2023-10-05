@@ -2,5 +2,20 @@
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px red;
-    width: 400px;
+    width: 600px;
+}
+.table, td, th{
+    border: 1px solid black;
+}
+th,td {
+    min-width: 100px;
+}
+.table{
+    border-collapse: collapse ;
+}
+.so-am{
+    color: red;
+}
+.right{
+    text-align: right;
 }
