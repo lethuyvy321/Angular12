@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -14,6 +14,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HighLightDirective } from './Directive/high-light.directive';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { GetDataComponent } from './get-data/get-data.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     PageNotFoundComponent,
     HighLightDirective,
     TemplateDrivenFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    GetDataComponent,
+    PostDataComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     BrowserAnimationsModule,
     FormsModule,
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

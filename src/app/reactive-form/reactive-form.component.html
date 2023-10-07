@@ -3,11 +3,17 @@
     <label>
         Age:
         <input type="number" formControlName="age">
+        <div *ngIf="!formData.controls.age.valid" style="color: red;">
+            Age is required
+        </div>
     </label>
     <br>
     <label>
         Name:
         <input type="text" formControlName="name">
+        <div *ngIf="!formData.controls.name.valid" style="color: red;">
+            Name is required
+        </div>
     </label>
     <br />
     <button type="submit" [disabled]="!formData.valid">Submit </button>
